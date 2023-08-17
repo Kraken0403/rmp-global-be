@@ -1,0 +1,21 @@
+@import './variable.scss';
+
+.custom-accordion {
+    .MuiPaper-root{
+        background-color: transparent;
+        border-bottom: 1px solid rgba(242,242,242,0.6);
+        
+        .MuiAccordionSummary-content {
+            margin: 25px 0;
+        }
+        // padding: 10px 0;
+        p {
+            color: $bg;
+            font-size: 18px;
+        }
+
+        svg {
+            fill: $bg;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+@import './variable.scss';
+
+.breadcrumbs {
+    width: 100%;
+    // padding-left: 60px;
+    background-color: $dark;
+    padding: 15px 60px;
+    p{
+        font-size: 14px;
+        color: $bg;
+        span{
+            color: rgba(255,255,255,0.5);
+        }
+    }
+}

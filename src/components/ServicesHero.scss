@@ -1,0 +1,46 @@
+@import './variable.scss';
+
+.services-hero{
+    width: 100%;
+    background-color: $bg;
+    // background-color: $dark;
+    // padding: 0px 0 60px 0;
+    // height: 60vh;
+    padding-top: 80px;
+
+}
+
+.services-inner {
+    min-height: 55vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    // align-items:end;
+    align-items: center;
+    .services-date{
+        // height: 100%;
+    }
+    .services-date {
+        max-width: 30%;
+        p{
+            width: 100%;
+        }
+    }
+    &-title {
+        max-width: 70%;
+        text-align: center;
+        p{
+            color: rgba(0,0,0, 0.7);
+            font-size: 16px;
+            font-weight: 500;
+            // align-self: end;
+            padding-bottom: 5px;
+        }
+
+        h2 {
+            max-width: 100%;
+            font-size: 75px;
+            font-weight: 400;
+        }
+    }
+}

@@ -1,0 +1,102 @@
+@import './variable.scss';
+
+.hero {
+    height: 65vh;
+    position: relative;
+    overflow: hidden;
+
+    img {
+        top: 0;
+        left: 0;
+        width: 100%;
+        object-fit: cover;
+        position: absolute;
+    }
+}
+
+.hero-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    .hero-main {
+        position: relative;
+        width: 100%;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        p {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 18px;
+            font-weight: 500;
+            padding-bottom: 10px;
+            padding-top: 80px;
+        }
+
+        h2 {
+            color: $bg;
+            font-size: 70px;
+            font-weight: 300;
+        }
+    }
+}
+
+// Media Queries for Responsive Design
+@media screen and (max-width: 1200px) {
+    .hero {
+        height: 60vh;
+    }
+
+    .hero-main {
+        height: 60vh;
+
+        p {
+            font-size: 16px;
+        }
+
+        h2 {
+            font-size: 48px;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .hero {
+        height: 50vh;
+    }
+
+    .hero-main {
+        height: 50vh;
+
+        p {
+            font-size: 14px;
+        }
+
+        h2 {
+            font-size: 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        height: 60vh;
+    }
+
+    .hero-wrapper .hero-main {
+        height: 60vh;
+    }
+
+    .hero img{
+        height: 100%;
+    }
+
+    .hero-wrapper .hero-main h2{
+        font-size: 42px;
+    }
+    .hero-wrapper .hero-main p{
+        font-size: 14px;
+    }
+}

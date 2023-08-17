@@ -1,0 +1,122 @@
+@import './variable.scss';
+
+.contact {
+    width: 100%;
+    padding: 90px 0;
+    &-wrapper {
+        width: 100%;
+        margin: auto;
+        background-color: $dark;
+        padding: 45px;
+        h4 {
+            color: $bg;
+            font-size: 46px;
+            font-weight: 400;
+        }
+
+        p{
+            color: $bg;
+            font-size: 18px;
+            opacity: 0.7;
+        }
+
+        .contact-form {
+            margin-top: 30px;
+
+            .input-row {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 25px;
+                label {
+                    color: $bg;
+                    font-size: 18px;
+                    margin-bottom: 10px;
+                }
+
+                input {
+                    padding: 10px;
+                    outline: 1px $accent;
+                }
+            }
+        }
+    }
+}
+
+.submit-btn {
+    padding: 15px 45px;
+    background-color: transparent;
+    color: $bg;
+    border-radius: 30px;
+    border: 1px solid $bg;
+}
+
+.address-wrapper {
+    padding: 40px;
+    width: 80%;
+    margin: auto;
+    .contact-email {
+        h4{
+            font-size: 36px;
+            font-weight: 400;
+            color: $dark;
+        }
+        margin-bottom: 30px;
+    }
+
+    .contact-number {
+        margin-bottom: 30px;
+        h4 {
+            color: $dark;
+            font-size: 22px;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+
+        p{
+            color: $accent;
+            font-size: 18px;
+        }
+    }
+
+    .contact-address {
+        h4 {
+            color: $dark;
+            font-size: 22px;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+
+        p{
+            color: $dark;
+            font-size: 18px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px)  {
+    .contact {
+        padding: 60px 0;
+    }
+
+    .contact-wrapper{
+        padding: 30px;
+    }
+
+    .contact-wrapper h4{
+        font-size: 42px;
+    }
+
+    .contact-wrapper p{
+        font-size: 16px;
+    }
+
+    .address-wrapper{
+        width: 100%;
+        padding: 30px 0;
+    }
+
+    .address-wrapper .contact-number h4, .address-wrapper .contact-address h4{
+        font-size: 16px;
+    }
+}

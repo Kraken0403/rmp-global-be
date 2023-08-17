@@ -1,0 +1,46 @@
+@import './variable.scss';
+
+.blog-hero{
+    width: 100%;
+    background-color: $bg;
+    // background-color: $dark;
+    padding: 80px 0 0 0 ;
+    // height: 60vh;
+}
+
+.blog-inner {
+    min-height: 55vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    // align-items:end;
+    align-items: center;
+   
+    .blog-date{
+        // height: 100%;
+    }
+    .blog-date {
+        max-width: 30%;
+        p{
+            width: 100%;
+        }
+    }
+    &-title {
+        max-width: 70%;
+        p{
+            color: rgba(0,0,0, 0.7);
+            font-size: 16px;
+            font-weight: 500;
+            // align-self: end;
+            padding-bottom: 10px;
+            // padding-top: 80px;
+            // max-width: 30%;
+        }
+
+        h2 {
+            max-width: 100%;
+            font-size: 46px;
+            font-weight: 400;
+        }
+    }
+}

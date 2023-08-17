@@ -1,0 +1,116 @@
+@import './variable.scss';
+
+.hs {
+    padding: 60px 0 0 0;
+}
+
+.services-menu {
+    font-size: 18px;
+    color: $dark;
+
+    p{
+        cursor: pointer!important;
+
+        &:first-child {
+            color: $accent;
+        }
+    }
+}
+
+.services-list {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    .services-block {
+        width: 70%;
+        margin: 0 auto 70px auto;
+    }
+
+    .services-title {
+        font-size: 24px;
+        font-weight: 400;
+        margin-bottom: 20px;
+        color: $dark;
+    }
+
+    .services-desc {
+        font-size: 16px;
+        line-height: 22px;
+        padding-bottom: 20px;
+        color: $dark;
+    }
+
+    .normal-link a {
+        text-decoration: none;
+    }
+
+    .normal-link-wrapper{
+        display: flex;
+        width: fit-content;
+        position: relative;
+        align-items: center;
+
+        &:hover {
+            p {
+                margin-right: 18px;
+                transition: all 0.2s ease;
+            }
+        }
+        &::after {
+            content: '';
+            width: 100%;
+            height: 1px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: $accent;
+        }
+
+        p{
+            color: $dark;
+            margin-right: 10px;
+            font-size: 18px;
+            font-weight: 5800;
+            transition: all 0.2s ease;
+        }
+
+        img {
+            width: 25px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hs {
+        padding: 40px 0 40px 0;
+      }
+
+      .services-menu {
+        font-size: 16px;
+        color: $dark;
+        display: flex;
+        p{
+            margin-right: 30px;
+        }  
+    }
+
+    .services-list .services-block {
+        width: 100%;
+        margin: 30px 0 25px 0 ;
+    }
+
+    .services-list .services-title{
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    .services-list .services-desc{
+        font-size: 16px;
+        padding-bottom: 10px;
+    }
+
+    .services-list .normal-link-wrapper p{
+        font-size: 16px;
+    }
+}

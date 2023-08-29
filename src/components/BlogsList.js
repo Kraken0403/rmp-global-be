@@ -27,7 +27,6 @@ function BlogsList() {
     .then(data => {
       setData(data.data);
       console.log(data.data)
-  
       setIsLoading(false); 
     })
     .catch(error => {

@@ -14,7 +14,7 @@ function BlogInner() {
 
   useEffect(() => {
     const bearerToken = config.bearerToken;
-    const apiUrl = `http://localhost:1337/api/blogs/${id}?populate=*`;
+    const apiUrl = `https://rmp-strapi.onrender.com/api/blogs/${id}?populate=*`;
 
     fetch(apiUrl, {
       method: 'GET',

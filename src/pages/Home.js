@@ -19,7 +19,7 @@ function Home() {
           <Title title="Select our Services or our Products and see if we're a good fit."/>
           <HomeServices/>
           <WhyUs/>
-          <Insights/>
+          {/* <Insights/> */}
           <Footer/>
         </div>
     </Scroll> 

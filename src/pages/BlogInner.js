@@ -6,46 +6,35 @@ import Header from '../components/Header';
 import { useParams } from 'react-router-dom';
 import config from '../config';
 
+import { usePrismicDocumentByUID } from '@prismicio/react'
+
+
 function BlogInner() {
+
+  
   const { id } = useParams();
 
-  const [blogData, setBlogData] = useState({});
-  const [isLoading, setIsLoading] = useState(true);
+  const [doc] = usePrismicDocumentByUID('blog', id)
+
+  console.log(doc)
 
   useEffect(() => {
-    const bearerToken = config.bearerToken;
-    const apiUrl = `https://rmp-strapi.onrender.com/api/blogs/${id}?populate=*`;
-
-    fetch(apiUrl, {
-      method: 'GET',
-      headers: {
-        Authorization: `Bearer ${bearerToken}`
-      }
-    })
-    .then(response => response.json())
-    .then(data => {
-      setBlogData(data);
-      setIsLoading(false);
-    })
-    .catch(error => {
-      console.error(error);
-      setIsLoading(false);
-    });
-  }, [id]);
+    
+  }, []);
 
   return (
     <div>
       <Header color='#020e12' />
-      {isLoading ? (
-        <p>Loading...</p> // Display a loading message or a spinner
-      ) : (
-        <>
-            <BlogHero blog={blogData}/>
-            <BlogContent blog={blogData} />
-
-        </>
+      {doc ? (
+          <>
+            <BlogHero blog={doc}/>
+            <BlogContent blog={doc} />
+          </>
+        ) : (
+              <p>Loading...</p>
+            )}
         
-      )}
+      
       <Footer />
     </div>
   );

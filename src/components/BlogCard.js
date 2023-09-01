@@ -1,6 +1,6 @@
 import React from 'react'
 import './BlogCard.scss'
-import sample from '../assets/sample.png'
+// import sample from '../assets/sample.png'
 import arrow from '../assets/arrow.png'
 
 function BlogCard(props) {

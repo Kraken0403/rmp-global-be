@@ -6,6 +6,8 @@ import {Row, Col} from 'react-bootstrap'
 import './Insights.scss'
 import sanjay from '../assets/sanjay-patel.webp'
 import piyush from '../assets/piyush.webp'
+import krunal from '../assets/krunal.jpg'
+import nidhi from '../assets/nidhi.jpg'
 import BlogCard from './BlogCard'
 
 function Team(props) {
@@ -25,7 +27,7 @@ function Team(props) {
                     </p>
 
                     <div className="normal-link">
-                        <Link>
+                        <Link to='/contact-us'>
                             <div className="normal-link-wrapper">
                                 <p>Contact Us</p>
                                 <img src={arrow} alt="" />
@@ -38,17 +40,25 @@ function Team(props) {
             <div className="blogs-list" style={{backgroundColor: props.bg}}>
                 <Row>
                     <Col md={3}>
-                        <BlogCard name="SanjayKumar Patel" occupation="Director" image={sanjay}/>
+                        <Link to="https://www.linkedin.com/in/sanjaykumar-patel-excelonip/">
+                            <BlogCard title="SanjayKumar Patel" tagOne="Director" image={sanjay}/>
+                        </Link>
                     </Col>
                     <Col md={3}>
-                        <BlogCard name="Piyush Sunani" occupation="Director" image={piyush}/>
+                        <BlogCard title="Piyush Sunani" tagOne="Director" image={piyush}/>
                     </Col>
                     <Col md={3}>
-                        <BlogCard name="Piyush Sunani" occupation="Director" image={piyush}/>
+                        <Link to='https://www.linkedin.com/in/ca-krunal-shah-bb66bb143/'>
+                            <BlogCard title="Krunal Shah" tagOne="Consultant" image={krunal}/>
+
+                        </Link>
                     </Col>
                     <Col md={3}>
-                        <BlogCard  name="Piyush Sunani" occupation="Director" image={piyush}/>
+                        <Link to='https://www.linkedin.com/in/nidhi-ramanuj-5b5605144/'>
+                            <BlogCard  title="Nidhi Ramanauj" tagOne="BDM" image={nidhi}/>
+                        </Link>
                     </Col>
+                
                 </Row>
             </div>
         </Container>

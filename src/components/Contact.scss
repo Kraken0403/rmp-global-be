@@ -43,6 +43,8 @@
     }
 }
 
+
+
 .submit-btn {
     padding: 15px 45px;
     background-color: transparent;
@@ -80,6 +82,7 @@
     }
 
     .contact-address {
+        margin-bottom: 30px;
         h4 {
             color: $dark;
             font-size: 22px;
@@ -90,6 +93,25 @@
         p{
             color: $dark;
             font-size: 18px;
+        }
+    }
+
+    .contact-countries {
+        margin-bottom: 30px;
+        h4 {
+            margin-bottom: 5px;
+        }
+
+        .country-flags {
+            * {
+                margin-right: 15px;
+            }
+        }
+    }
+
+    .contact-map {
+        iframe{
+            width: 100%;
         }
     }
 }

@@ -4,10 +4,9 @@ import { Link } from 'react-router-dom'
 import arrow from '../assets/Arrow 2.png'
 import {Row, Col} from 'react-bootstrap'
 import './Insights.scss'
-import BlogCard from './BlogCard'
 import BlogsList from './BlogsList'
 
-function Insights() {
+function Insights(props) {
   return (
     <div className='insights'>
         <Container>
@@ -20,11 +19,11 @@ function Insights() {
 
                 <div className="insights-content">
                     <p className='insights-content-main'>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut sagittis libero. Sed dignissim vitae risus et imperdiet. Duis facilisis massa ac orci aliquet interdum. Ut non leo ornare, hendrerit diam nec, euismod nisl. Suspendisse potenti. Morbi eu mauris ultrices, feugiat tortor a, ornare quam. Morbi id efficitur massa, eu malesuada tellus.
+                    Your go-to source for all things related to innovation, technology, and the exciting developments happening in our industry. At RMP Global, we are dedicated to pushing the boundaries of what's possible, and this blog is where we share our insights, expertise, and thought leadership with you.
                     </p>
 
                     <div className="normal-link">
-                        <Link>
+                        <Link to='/blogs'>
                             <div className="normal-link-wrapper">
                                 <p>Explore</p>
                                 <img src={arrow} alt="" />
@@ -35,7 +34,7 @@ function Insights() {
             </div>
         </Container>
       
-        <BlogsList/>
+        <BlogsList blogData={props.blogData}/>
            
     </div>
   )

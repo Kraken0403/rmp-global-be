@@ -4,6 +4,7 @@ import CustomButton from './CustomButton'
 import {Row, Col} from 'react-bootstrap'
 import './Footer.scss'
 import { Link } from 'react-router-dom'
+import logo from '../assets/rmp-logo.png'
 
 function Footer() {
   return (
@@ -23,7 +24,10 @@ function Footer() {
 
                 <div className="footer-links">
                     <Row>
-                        <Col md={6}>
+                        <Col md={4}>
+                            <div className="logo-footer">
+                                <img src={logo} alt="" />
+                            </div>
                         </Col>
                         <Col md={2}>
                             <div className="footer-links-menu">
@@ -67,10 +71,10 @@ function Footer() {
                                 <h4>Contact</h4>
                                 <ul>
                                     <li>
-                                        +91-9727259636
+                                        +91-9512453532
                                     </li>
                                     <li>
-                                        info@rmpglobal.co.in
+                                        info@rmpglobal.io
                                     </li>
                                     {/* <li>
                                         Service 3

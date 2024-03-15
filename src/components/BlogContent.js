@@ -1,41 +1,60 @@
-import React from 'react'
-import './BlogContent.scss'
-import {Row, Col} from 'react-bootstrap'
+import React from 'react';
+import './BlogContent.scss';
+import { Row, Col } from 'react-bootstrap';
 
-import ReactMarkdown from "react-markdown";
-import Container from './Container'
-// import remarkGfm from 'remark-gfm'
- // Import react-html-parser
+import { WhatsappIcon, FacebookIcon,  EmailIcon } from 'react-share';
 
-function BlogContent({blog}) {
+import { RichText } from 'prismic-reactjs';
+import Container from './Container';
+import {FacebookShareButton, EmailShareButton, WhatsappShareButton } from 'react-share';
 
-  return (
-    <div className='blog-content'>
+// HTML Serializer
+
+function BlogContent({ blog }) {
+    const currentURL = window.location.href;
+
+    return (
+      <div className="blog-content">
         <Container>
-        <img src={blog.data.blog_image.url} alt="" />
-
-        <div className="blog-content-wrapper">
+          <img src={blog.data.blog_image.url} alt="" />
+  
+          <div className="blog-content-wrapper">
             <Row>
-                <Col md={4}>
-                    <div className="blog-content-terms">
-                        {/* <h2>{format(new Date(blog.data.attributes.Date), 'MMM dd, yyyy')}</h2> */}
-                        <h3>Share</h3>
+              <Col md={3}>
+                <div className="blog-content-terms">
+                  <h3>Share</h3>
+                  <div className="social-icons">
+                    <div className="social-icon">
+                      <FacebookShareButton url={currentURL}>
+                        <FacebookIcon/>
+                      </FacebookShareButton>
                     </div>
-                </Col>
-                <Col md={8}>
-                    <div className="blog-content-main" >
-                    {blog.data.blog_content.map((paragraph, index) => (
-                        <div className="para-blog" key={index}>
-                            {paragraph.text}
-                        </div>
-                    ))}
+                    <div className="social-icon">
+                      <WhatsappShareButton url={currentURL}>
+                        <WhatsappIcon/> 
+                      </WhatsappShareButton>
                     </div>
-                </Col>
+                    <div className="social-icon">
+                      <EmailShareButton url={currentURL}>
+                        <EmailIcon/>
+                      </EmailShareButton>
+                    </div>
+                  </div>
+                </div>
+              </Col>
+              <Col md={6}>
+                <div className="blog-content-main">
+                  {RichText.render(blog.data.blog_content)}
+                </div>
+              </Col>
+              <Col md={3}>
+                <div className="blog-content-terms"></div>
+              </Col>
             </Row>
-        </div>
+          </div>
         </Container>
-    </div>
-  )
-}
-
-export default BlogContent
+      </div>
+    );
+  }
+  
+  export default BlogContent;

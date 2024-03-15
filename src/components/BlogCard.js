@@ -15,8 +15,11 @@ function BlogCard(props) {
 
             <div className="blogcard-cta">
                 <div className="blogcard-info">
-                    <h4>{props.name}</h4>
-                    <p>{props.occupation}</p>
+                    <div className="blogcard-tags">
+                        <h4>{props.tagOne} &nbsp; &nbsp;</h4>
+                        <h4>{props.tagTwo}</h4>
+                    </div>
+                    {/* <p>{props.occupation}</p> */}
                 </div>
 
                 <div className="arrow-round">

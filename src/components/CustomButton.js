@@ -8,9 +8,9 @@ function CustomButton(props) {
         <div className="custom-button-text">
             <p style={{color: props.textColor}}>{props.text}</p>
         </div>
-        <div className="custom-button-arrow" style={{backgroundColor: props.arrowBg}}>
+        {/* <div className="custom-button-arrow" style={{backgroundColor: props.arrowBg}}>
             <img className='arrow' src={arrow} alt="" />
-        </div>
+        </div> */}
     </div>
   )
 }

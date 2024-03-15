@@ -59,10 +59,18 @@
     }
 
     .blogcard-info {
+        width: 80%;
+        display: flex;
+        .blogcard-tags {
+            width: 100%;
+            display: flex;
+        }
         h4 {
+            // background-color: #c2c2c2;
             margin-bottom: 5px;
             color: $dark;
-            font-size: 16px;
+            font-size: 12px;
+            text-transform: uppercase;
             transition: color 0.2s ease; /* Add transition here */
         }
         p {

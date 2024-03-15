@@ -9,7 +9,7 @@ function WhyUs() {
         <Container>
             <div className="whyus-title">
                 <h2>
-                    Why RMP Global should be your first choice in manpower outsourcing
+                    Why RMP Global should be your first choice
                 </h2>
             </div>
 
@@ -17,10 +17,10 @@ function WhyUs() {
                 <div className="whyus-boxes">
                     <div className="whyus-box box-one">
                         <h2>
-                            1/3 <span>rd</span>
+                            15+ <span></span>
                         </h2>
                         <p>
-                            Cost of your current Service<br/>Billings
+                        Years of practice in this <br/>industry
                         </p>
                     </div>
                     <div className="whyus-box box-two">
@@ -28,8 +28,10 @@ function WhyUs() {
                         <p>Countries we are operating in. <br/> US, UK, Canada, Australia, India</p>
                     </div>
                     <div className="whyus-box box-three">
-                        <h2>15+</h2>
-                        <p>Years of practice in this <br/>particular industry </p>
+                        <h2>1/3 <span style={{color:'#fff'}}>rd</span></h2>
+                        <p> 
+                            Cost of your current Service<br/>Billings
+                        </p>
                     </div>
                 </div>
 

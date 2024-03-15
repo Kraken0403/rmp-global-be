@@ -1,42 +1,43 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import BlogContent from '../components/BlogContent';
 import BlogHero from '../components/BlogHero';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import { useParams } from 'react-router-dom';
-import config from '../config';
-
 import { usePrismicDocumentByUID } from '@prismicio/react'
+import CursorFollower from '../components/CursorFollower'
+import Transitions from '../components/Transitions'
+import ReactGA from 'react-ga'
 
 
 function BlogInner() {
 
-  
-  const { id } = useParams();
-
-  const [doc] = usePrismicDocumentByUID('blog', id)
-
-  console.log(doc)
+  const { slug } = useParams();
+  const [doc] = usePrismicDocumentByUID('blog', slug)
 
   useEffect(() => {
-    
+    ReactGA.pageview(window.location.pathname);
   }, []);
 
   return (
-    <div>
-      <Header color='#020e12' />
-      {doc ? (
-          <>
-            <BlogHero blog={doc}/>
-            <BlogContent blog={doc} />
-          </>
-        ) : (
-              <p>Loading...</p>
-            )}
+    <>
+    {doc ? (
+    <Transitions>
+
+          <CursorFollower/>
+          <Header color='#020e12' />
+          <BlogHero blog={doc}/>
+          <BlogContent blog={doc} />
+          <Footer />
+       
         
-      
-      <Footer />
-    </div>
+      </Transitions>  
+      ) : (
+        <p>Loading...</p>
+      )}
+
+    </>
+    
   );
 }
 

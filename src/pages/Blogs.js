@@ -1,21 +1,26 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import BlogsList from '../components/BlogsList';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
 import '../components/BlogsList.scss'
-import Scroll from '../components/Scroll';
 import Breadcrumbs from '../components/Breadcrumbs';
 import { useAllPrismicDocumentsByType } from '@prismicio/react'
+import CursorFollower from '../components/CursorFollower'
+import Transitions from '../components/Transitions'
+import ReactGA from 'react-ga'
 
-function Blogs() {
+function Blogs() {  
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname);
+  })
   
   const [documents] = useAllPrismicDocumentsByType('blog');
-
   return (
-    <Scroll>
+
+    <Transitions>
         <div>
-      
+          <CursorFollower/>
             <Header/>
             <Hero caption="Our Blogs" title="Check out our Blogs"/>
             <Breadcrumbs page="blogs"/>
@@ -28,7 +33,8 @@ function Blogs() {
             </div>
             <Footer/>
         </div>
-    </Scroll>
+      </Transitions>
+ 
   );
 }
 

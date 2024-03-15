@@ -43,13 +43,30 @@
 
     .normal-link a {
         text-decoration: none;
+        color: $dark;
+
+        // &:hover {
+        //     color: $accent;
+        // }
     }
 
     .normal-link-wrapper{
+        .flags {
+            margin-bottom: 5px;
+            img {
+                margin-right: 10px;
+            }
+        }
+        &-inner {
+            display: flex;
+            align-items: center;
+
+        }
         display: flex;
         width: fit-content;
         position: relative;
-        align-items: center;
+        // align-items: center;
+        flex-direction: column;
 
         &:hover {
             p {

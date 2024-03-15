@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.cc583c6d.css",
+    "main.js": "/static/js/main.e30b192c.js",
+    "static/media/hero.png": "/static/media/hero.ee907f04239af9c0216b.png",
+    "static/media/Data Labelling.webp": "/static/media/Data Labelling.b4f0724550450d8c664b.webp",
+    "static/media/sample2.jpg": "/static/media/sample2.8298e2dcba79057a3228.jpg",
+    "static/media/Tax Compliance.jpeg": "/static/media/Tax Compliance.4eee764d273b75c9dba9.jpeg",
+    "static/media/BookKeeping.jpeg": "/static/media/BookKeeping.c163307c7fbca8f8b7c3.jpeg",
+    "static/media/Virtual CFO.jpeg": "/static/media/Virtual CFO.73e54c9889f82b401380.jpeg",
+    "static/media/Data Analytics.jpeg": "/static/media/Data Analytics.b91f40c581cd2b897f20.jpeg",
+    "static/media/nidhi.jpg": "/static/media/nidhi.98ddb8bd00daa913ff00.jpg",
+    "static/media/sanjay-patel.webp": "/static/media/sanjay-patel.23f02bff1aca0bd64384.webp",
+    "static/media/Financial Statement Preparation.webp": "/static/media/Financial Statement Preparation.d3c4cf1391882b12a1a6.webp",
+    "static/media/piyush.webp": "/static/media/piyush.1e1b7c599e3e37a124d5.webp",
+    "static/media/MIS.jpeg": "/static/media/MIS.b91f49733d7e399ff064.jpeg",
+    "static/media/krunal.jpg": "/static/media/krunal.400d0d8c5c781d8f954d.jpg",
+    "static/media/rajni.webp": "/static/media/rajni.d7716266eea997341110.webp",
+    "static/media/NeueMontreal-Bold.otf": "/static/media/NeueMontreal-Bold.0836656dccdad13f5c96.otf",
+    "static/media/NeueMontreal-Medium.otf": "/static/media/NeueMontreal-Medium.15b1070b8dac57958acf.otf",
+    "static/media/NeueMontreal-Regular.otf": "/static/media/NeueMontreal-Regular.140bfb4a71fe08805d92.otf",
+    "static/media/rmp-logo.png": "/static/media/rmp-logo.85bd65a09ae13ee8c6c1.png",
+    "static/media/hero-bg.webp": "/static/media/hero-bg.116392035ff94581387f.webp",
+    "index.html": "/index.html",
+    "main.cc583c6d.css.map": "/static/css/main.cc583c6d.css.map",
+    "main.e30b192c.js.map": "/static/js/main.e30b192c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cc583c6d.css",
+    "static/js/main.e30b192c.js"
+  ]
+}

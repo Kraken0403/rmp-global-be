@@ -2,6 +2,14 @@
 
 .footer-custom {
     padding: 90px 0;
+
+    .logo-footer {
+        width: 20%;
+
+        img {
+            width: 100%;
+        }
+    }
 }
 .footer-main{
     border-bottom: 1px solid rgba(2,14,18,0.1);
@@ -10,7 +18,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    
     .footer-content {
         h1 {
             color: $dark;

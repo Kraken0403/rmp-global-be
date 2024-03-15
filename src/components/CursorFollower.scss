@@ -1,0 +1,37 @@
+@import './variable.scss';
+
+.cursor-follower {
+    pointer-events: none;
+    z-index: 9999;
+    background-color: #fff;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    // border: 2px solid $accent;
+    transition: 
+    width 300ms cubic-bezier(0.25, 0.1, 0.25, 1),
+    height 300ms cubic-bezier(0.25, 0.1, 0.25, 1);   
+    border: 2px solid $accent;
+  }
+  
+  .follower-content {
+    background-color: $accent;
+    color: #fff;
+    transform: translate(-50%, -50%);
+  }
+  
+  .link-hover {
+    /* Define your custom cursor style for links */
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    // border: 2px solid $accent;
+    // background-color: #fff;
+    mix-blend-mode: difference;
+    // background-blend-mode: difference;
+    // background-color: transparent; /* Red box */
+    transform: translate(-50%, -50%);
+    transition: 
+    width 300ms cubic-bezier(0.25, 0.1, 0.25, 1),
+    height 300ms cubic-bezier(0.25, 0.1, 0.25, 1);
+  }

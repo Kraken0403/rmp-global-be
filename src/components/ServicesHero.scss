@@ -44,3 +44,17 @@
         }
     }
 }
+
+@media screen and (max-width: 768px){
+    .services-inner {
+        height: 30vh!important;
+        min-height: 30vh;
+    }
+
+    .services-inner-title h2{
+        font-size: 42px;
+    }
+
+    
+    
+}

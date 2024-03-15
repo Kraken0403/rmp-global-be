@@ -87,9 +87,8 @@ function Header(props) {
             closeQuote();
         })
 
-        document
-        .querySelector(".quote-form-main")
-        .addEventListener("submit", handleSubmit);
+        document.querySelector(".quote-form-main").addEventListener("submit", handleSubmit);
+
         }, [])
 
         const handleSubmit = (event) => {
@@ -119,7 +118,7 @@ function Header(props) {
                     <div className="quote-close-btn" onClick={closeQuote}>
                         <CloseIcon/>
                     </div>
-                    <form className='quote-form-main' method="POST" data-netlify="true" onSubmit={handleSubmit}>
+                    <form name="quote-form" className='quote-form-main' method="POST" data-netlify="true">
                         <div className="input-row">
                             <label htmlFor="q-name">Name:</label>
                             <input type="text" required name='q-name' />

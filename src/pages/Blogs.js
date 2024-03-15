@@ -9,6 +9,7 @@ import { useAllPrismicDocumentsByType } from '@prismicio/react'
 import CursorFollower from '../components/CursorFollower'
 import Transitions from '../components/Transitions'
 import ReactGA from 'react-ga'
+import { Helmet } from 'react-helmet'
 
 function Blogs() {  
   useEffect(() => {
@@ -19,6 +20,9 @@ function Blogs() {
   return (
 
     <Transitions>
+      <Helmet>
+        <title>RMP Global Blogs</title>
+      </Helmet>
         <div>
           <CursorFollower/>
             <Header/>

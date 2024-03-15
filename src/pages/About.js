@@ -13,6 +13,7 @@ import Transitions from '../components/Transitions'
 // import transition from '../components/transition'
 import ReactGA from 'react-ga';
 // import ReactWhatsapp from 'react-whatsapp'
+import {Helmet} from 'react-helmet'
 
 function About() {
   useEffect(()=> {
@@ -22,7 +23,9 @@ function About() {
   return (
           <Transitions>
           {/* <ReactWhatsapp number="+919512453532" message="Hello World!!!" /> */}
-
+            <Helmet>
+              <title>RMP Global About Us</title>
+            </Helmet>
             <CursorFollower/>
             <Header/>
             <Hero caption="Who we are" title="Get to know us"/>

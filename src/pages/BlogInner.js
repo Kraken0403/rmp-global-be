@@ -8,7 +8,7 @@ import { usePrismicDocumentByUID } from '@prismicio/react'
 import CursorFollower from '../components/CursorFollower'
 import Transitions from '../components/Transitions'
 import ReactGA from 'react-ga'
-
+import { Helmet } from 'react-helmet';
 
 function BlogInner() {
 
@@ -22,8 +22,14 @@ function BlogInner() {
   return (
     <>
     {doc ? (
+      console.log(doc),
     <Transitions>
-
+          <Helmet>
+            <title>{doc.data.blog_title[0].text}</title>
+            <meta name="og:title" content={doc.data.blog_title[0].text}/>
+            <meta name="og:image" content={doc.data.blog_image.url} data-react-helmet="true"/>
+            <meta name="og:description" content={doc.data.blog_description[0].text} data-react-helmet="true"/>
+          </Helmet>
           <CursorFollower/>
           <Header color='#020e12' />
           <BlogHero blog={doc}/>

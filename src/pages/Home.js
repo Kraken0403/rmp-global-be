@@ -23,7 +23,7 @@ function Home() {
  
       <Transitions>
         <Helmet>
-          <title>Hey Now</title>
+          <title>RMP GLobal</title>
         </Helmet>
         <CursorFollower />
         <Header />

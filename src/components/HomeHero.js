@@ -4,7 +4,10 @@ import hero from '../assets/sample2.jpg'
 import CustomButton from './CustomButton'
 import { Link } from 'react-router-dom'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay } from 'swiper/modules';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+// import 'swiper/navigation.css'; // Navigation module
+// import 'swiper/pagination.css';
+import 'swiper/css/navigation'
 import 'swiper/css';
 
 function HomeHero() {
@@ -13,7 +16,10 @@ function HomeHero() {
         <Swiper
             spaceBetween={0}
             slidesPerView={1}
-            modules={[Autoplay]}
+            modules={[Autoplay, Pagination, Navigation]}
+            navigation
+            pagination = {{clickable: true}}
+            arrows = "true"
             >
             <SwiperSlide>
                 <div className='hero-slide'>
@@ -22,11 +28,12 @@ function HomeHero() {
                     </div>
                     <div className="hero-text">    
                         <h1 className='hero-title' data-scroll >
-                            Improve your margins <br/>
-                            upto 67% of your Billings
+                            Dedicated Resources <br/>
+                            
                         </h1>
                         <p className='hero-para' data-scroll  >
-                            Your life and business goals are unique. You have your own vision, values and ambitions. Your financial plan should be a reflection of this. Let's begin the journey to a brighter tomorrow, today.
+                        Maximize your project's potential with our Dedicated Resource service. Benefit from a committed team member solely focused on your objectivs, ensuring tailored solutions, undivided attention, and maximum efficiency. Elevate your outcomes with personalized support.
+
                         </p>
                         <div className="cta-btn" data-scroll data-scroll-delay="1" >
                             <Link to="/contact-us" >
@@ -44,11 +51,10 @@ function HomeHero() {
                     </div>
                     <div className="hero-text">    
                         <h1 className='hero-title' data-scroll >
-                            Improve your margins <br/>
-                            upto 67% of your Billings
+                            Hourly Base
                         </h1>
                         <p className='hero-para' data-scroll   >
-                            Your life and business goals are unique. You have your own vision, values and ambitions. Your financial plan should be a reflection of this. Let's begin the journey to a brighter tomorrow, today.
+                        Experience flexibility and efficiency with our Hourly Base services. Pay for precisely what you need, when you need it, without any long-term commitments. Enjoy transparent pricing and unleash productivity on your terms.
                         </p>
                         <div className="cta-btn" data-scroll data-scroll-delay="1" >
                             <Link to="/contact-us" >
@@ -65,11 +71,10 @@ function HomeHero() {
                     </div>
                     <div className="hero-text">    
                         <h1 className='hero-title' data-scroll >
-                            Improve your margins <br/>
-                            upto 67% of your Billings
+                            Project Base
                         </h1>
                         <p className='hero-para' data-scroll   >
-                            Your life and business goals are unique. You have your own vision, values and ambitions. Your financial plan should be a reflection of this. Let's begin the journey to a brighter tomorrow, today.
+                        Turn your vision into reality effortlessly with our Project Base solutions. Seamlessly execute projects from start to finish with our reliable and supportive approach. Experience peace of mind, quality, and success with our project-based model.
                         </p>
                         <div className="cta-btn" data-scroll data-scroll-delay="1" >
                             <Link to="/contact-us" >

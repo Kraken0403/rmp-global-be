@@ -2,15 +2,17 @@
 <html lang="en">
   <head>
     
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1SR1S2VFWD"></script>
+  
+<!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TRK9T2J1DW"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
-    gtag('config', 'G-1SR1S2VFWD');
+    gtag('config', 'G-TRK9T2J1DW');
   </script>
+
 
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/rmp-logo.png" />
@@ -42,6 +44,11 @@
     
   </head>
   <body>
+    <form name="quote-form" className='quote-form-main' netlify netlify-honeypot="bot-field" hidden>
+        <input type="text" required name='q-name' />
+        <input type="email" required name='q-email' />
+        <input type="text" required name='q-company' />
+  </form>
     <noscript>You need to enable JavaScript to run this app</noscript>
     <div id="root"></div>
   </body>

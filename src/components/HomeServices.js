@@ -261,10 +261,10 @@ function HomeServices() {
                     <div className="services-list">
                         <div className="services-block">
                             <h2 className="services-title">
-                            Tax Compliance
+                                Tax Compliance
                             </h2>
                             <p className="services-desc">
-                            Effortlessly maneuver the intricacies of taxation with our all-encompassing Tax Compliance Services. We guarantee strict compliance with dynamic tax laws, maximize deductions, and meticulously handle tax returns. Delegate your tax obligations to us, enabling uninterrupted focus on your fundamental business endeavors.
+                                Effortlessly maneuver the intricacies of taxation with our all-encompassing Tax Compliance Services. We guarantee strict compliance with dynamic tax laws, maximize deductions, and meticulously handle tax returns. Delegate your tax obligations to us, enabling uninterrupted focus on your fundamental business endeavors.
                             </p>
                             <div className="normal-link">
                                 <Link to='/tax-compliance' className='link-element'>
@@ -325,7 +325,68 @@ function HomeServices() {
                                 </Link>
                             </div>
                         </div>
+                        <div className="services-block">
+                            <h2 className="services-title">
+                                HR/Payroll
+                            </h2>
+                            <p className="services-desc">
+                            In the dynamic world of finance, where accuracy and transparency are paramount, your financial statements are more than just numbers; they are a reflection of your organization's fiscal health and stewardship
+                            </p>
+                            <div className="normal-link">
+                                <Link className="link-element">
+                                    <div className="normal-link-wrapper">
+                                        <div className="flags">
+                                        <ReactCountryFlag countryCode="US" svg
+                                            style={{
+                                                width: '22px',
+                                                height: '22px',
+                                            }}/>
 
+                                        <ReactCountryFlag countryCode="GB" svg
+                                            style={{
+                                                width: '22px',
+                                                height: '22px',
+                                            }}/>
+                                        </div>
+                                        <div className="normal-link-wrapper-inner">
+                                            <p><Link to="/financial">Explore</Link></p>
+                                            <img src={arrow} alt="" />
+                                        </div>
+                                    </div>
+                                </Link>
+                            </div>
+                        </div>
+                        <div className="services-block">
+                            <h2 className="services-title">
+                                Self Assessment
+                            </h2>
+                            <p className="services-desc">
+                            In the dynamic world of finance, where accuracy and transparency are paramount, your financial statements are more than just numbers; they are a reflection of your organization's fiscal health and stewardship
+                            </p>
+                            <div className="normal-link">
+                                <Link className="link-element">
+                                    <div className="normal-link-wrapper">
+                                        <div className="flags">
+                                        <ReactCountryFlag countryCode="US" svg
+                                            style={{
+                                                width: '22px',
+                                                height: '22px',
+                                            }}/>
+
+                                        <ReactCountryFlag countryCode="GB" svg
+                                            style={{
+                                                width: '22px',
+                                                height: '22px',
+                                            }}/>
+                                        </div>
+                                        <div className="normal-link-wrapper-inner">
+                                            <p><Link to="/financial">Explore</Link></p>
+                                            <img src={arrow} alt="" />
+                                        </div>
+                                    </div>
+                                </Link>
+                            </div>
+                        </div>
                     </div>
                 </Col>
 
@@ -366,6 +427,70 @@ function HomeServices() {
                         <div className="services-block">
                             <h2 className="services-title">
                                 Financials
+                            </h2>
+                            <p className="services-desc">
+                            In the dynamic world of finance, where accuracy and transparency are paramount, your financial statements are more than just numbers; they are a reflection of your organization's fiscal health and stewardship
+                            </p>
+                            <div className="normal-link">
+                                <Link className="link-element">
+                                    <div className="normal-link-wrapper">
+                                        <div className="flags">
+                                        <ReactCountryFlag countryCode="US" svg
+                                            style={{
+                                                width: '22px',
+                                                height: '22px',
+                                            }}/>
+
+                                        <ReactCountryFlag countryCode="GB" svg
+                                            style={{
+                                                width: '22px',
+                                                height: '22px',
+                                            }}/>
+                                        </div>
+                                        <div className="normal-link-wrapper-inner">
+                                            <p><Link to="/financial">Explore</Link></p>
+                                            <img src={arrow} alt="" />
+                                        </div>
+                                    </div>
+                                </Link>
+                            </div>
+                        </div>
+
+                        <div className="services-block">
+                            <h2 className="services-title">
+                                Company Secretarial
+                            </h2>
+                            <p className="services-desc">
+                                Enhance your company's fiscal well-being through our professional Bookkeeping Services. Our precise financial record-keeping guarantees accuracy in data, efficient tax preparation, and insightful decision-making. Rely on us to handle your bookkeeping while you concentrate on expanding your digital footprint.
+                            </p>
+                            <div className="normal-link">
+                                <Link to="/book-keeping" className="link-element">
+                                    <div className="normal-link-wrapper">
+                                        <div className="flags">
+                                        <ReactCountryFlag countryCode="US" svg
+                                            style={{
+                                                width: '22px',
+                                                height: '22px',
+                                            }}/>
+
+                                        <ReactCountryFlag countryCode="GB" svg
+                                            style={{
+                                                width: '22px',
+                                                height: '22px',
+                                            }}/>
+                                        </div>
+                                        <div className="normal-link-wrapper-inner">
+                                            <p><Link to="/book-keeping">Explore</Link></p>
+                                            <img src={arrow} alt="" />
+                                        </div>
+                                    </div>
+                                </Link>
+                            </div>
+                        </div>
+
+                        <div className="services-block">
+                            <h2 className="services-title">
+                                Year End Accounting
                             </h2>
                             <p className="services-desc">
                             In the dynamic world of finance, where accuracy and transparency are paramount, your financial statements are more than just numbers; they are a reflection of your organization's fiscal health and stewardship

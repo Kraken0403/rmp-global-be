@@ -118,7 +118,8 @@ function Header(props) {
                     <div className="quote-close-btn" onClick={closeQuote}>
                         <CloseIcon/>
                     </div>
-                    <form name="quote-form" className='quote-form-main' method="POST" data-netlify="true">
+                    <form name="quote-form" className='quote-form-main' method="POST" netlify="true">
+                        <input type="hidden" name="form-name" value="quote-form" />
                         <div className="input-row">
                             <label htmlFor="q-name">Name:</label>
                             <input type="text" required name='q-name' />
@@ -177,6 +178,32 @@ function Header(props) {
                             </div>
                         </div>
 
+                        <div className="input-row">
+                            <h4>Preferance:</h4>
+                            <div className="checkboxes">
+                                <div>
+                                    <label htmlFor="dedicated-resource">
+                                        <input type="checkbox" id="dedicated-resource" name="services[]" value="Dedicated Resource" />
+                                        <span>Dedicated Resource</span>
+                                    </label>
+                                </div>                            
+                                <div>
+                                    <label htmlFor="Hourly Base">
+                                        <input type="checkbox" id="Hourly Base" name="services[]" value="Hourly Base" />
+                                        <span>Hourly Base</span>
+                                    </label>
+                                </div>
+                                
+                                <div>
+                                    <label htmlFor="project-base">
+                                        <input type="checkbox" id="project-base" name="services[]" value="Project Base" />
+                                        <span>Project Base</span>
+                                    </label>
+                                </div>
+                                
+                            </div>
+                        </div>
+
                         <input type="submit" className="submit-btn" value="Submit" />
                     </form>
 
@@ -230,6 +257,11 @@ function Header(props) {
                         </ul>
                     </div>
                     <div className="menu-cta">
+                        <Link to='#'>
+                            <div className="data-sec">
+                                <h6>Data Security</h6>
+                            </div>
+                        </Link>
                         <Link onClick={openQuote} to="#">
                             <div className="contact-btn">
                                 <p>Get Quote</p>

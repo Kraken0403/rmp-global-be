@@ -1,7 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.cc583c6d.css",
-    "main.js": "/static/js/main.b8d6034c.js",
+    "main.css": "/static/css/main.9e4d6628.css",
+    "main.js": "/static/js/main.be79138a.js",
+    "static/media/Pranay Patel_BDM.jpg": "/static/media/Pranay Patel_BDM.a07d9fcaf12dff39eceb.jpg",
+    "static/media/Parth Gajjar_Account Executive.jpg": "/static/media/Parth Gajjar_Account Executive.ad9c6ad43208a4d81d75.jpg",
     "static/media/hero.png": "/static/media/hero.ee907f04239af9c0216b.png",
     "static/media/Data Labelling.webp": "/static/media/Data Labelling.b4f0724550450d8c664b.webp",
     "static/media/sample2.jpg": "/static/media/sample2.8298e2dcba79057a3228.jpg",
@@ -9,12 +11,19 @@
     "static/media/BookKeeping.jpeg": "/static/media/BookKeeping.c163307c7fbca8f8b7c3.jpeg",
     "static/media/Virtual CFO.jpeg": "/static/media/Virtual CFO.73e54c9889f82b401380.jpeg",
     "static/media/Data Analytics.jpeg": "/static/media/Data Analytics.b91f40c581cd2b897f20.jpeg",
+    "static/media/Akanksha Sanchawat_Account Executive.jpg": "/static/media/Akanksha Sanchawat_Account Executive.8988d8c77c5be4848997.jpg",
+    "static/media/Dhruti Mehta_Account Executive.jpg": "/static/media/Dhruti Mehta_Account Executive.869c19815d74434f8751.jpg",
     "static/media/nidhi.jpg": "/static/media/nidhi.98ddb8bd00daa913ff00.jpg",
+    "static/media/Tejal Parmar_account Executive.jpg": "/static/media/Tejal Parmar_account Executive.19ca128d5c0e9f442b95.jpg",
     "static/media/sanjay-patel.webp": "/static/media/sanjay-patel.23f02bff1aca0bd64384.webp",
     "static/media/Financial Statement Preparation.webp": "/static/media/Financial Statement Preparation.d3c4cf1391882b12a1a6.webp",
+    "static/media/Rishi Pawar_GST Executive.jpg": "/static/media/Rishi Pawar_GST Executive.3bea32b35900eb2c343b.jpg",
     "static/media/piyush.webp": "/static/media/piyush.1e1b7c599e3e37a124d5.webp",
+    "static/media/Kaushik Chavda_account Executive.jpg": "/static/media/Kaushik Chavda_account Executive.d8aade577aca7406e6d8.jpg",
     "static/media/MIS.jpeg": "/static/media/MIS.b91f49733d7e399ff064.jpeg",
+    "static/media/Bhavesh Dulera_Admin.jpg": "/static/media/Bhavesh Dulera_Admin.42e7ed8d916572146f99.jpg",
     "static/media/krunal.jpg": "/static/media/krunal.400d0d8c5c781d8f954d.jpg",
+    "static/media/Pooja Mehta_GST Executive.jpeg": "/static/media/Pooja Mehta_GST Executive.ef3029bbfbf77ccae04e.jpeg",
     "static/media/rajni.webp": "/static/media/rajni.d7716266eea997341110.webp",
     "static/media/NeueMontreal-Bold.otf": "/static/media/NeueMontreal-Bold.0836656dccdad13f5c96.otf",
     "static/media/NeueMontreal-Medium.otf": "/static/media/NeueMontreal-Medium.15b1070b8dac57958acf.otf",
@@ -22,11 +31,11 @@
     "static/media/rmp-logo.png": "/static/media/rmp-logo.85bd65a09ae13ee8c6c1.png",
     "static/media/hero-bg.webp": "/static/media/hero-bg.116392035ff94581387f.webp",
     "index.html": "/index.html",
-    "main.cc583c6d.css.map": "/static/css/main.cc583c6d.css.map",
-    "main.b8d6034c.js.map": "/static/js/main.b8d6034c.js.map"
+    "main.9e4d6628.css.map": "/static/css/main.9e4d6628.css.map",
+    "main.be79138a.js.map": "/static/js/main.be79138a.js.map"
   },
   "entrypoints": [
-    "static/css/main.cc583c6d.css",
-    "static/js/main.b8d6034c.js"
+    "static/css/main.9e4d6628.css",
+    "static/js/main.be79138a.js"
   ]
 }

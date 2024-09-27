@@ -257,7 +257,7 @@ function Header(props) {
                         </ul>
                     </div>
                     <div className="menu-cta">
-                        <Link to='#'>
+                        <Link to='/data-security'>
                             <div className="data-sec">
                                 <h6>Data Security</h6>
                             </div>

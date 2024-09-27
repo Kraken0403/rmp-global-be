@@ -1,6 +1,6 @@
 import React from 'react'
 import './AboutLeader.scss'
-import rajni from '../assets/rajni.webp'
+import rajni from '../assets/Rajnikant Patel.jpg'
 import Container from './Container'
 
 function AboutLeader() {

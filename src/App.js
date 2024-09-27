@@ -14,6 +14,7 @@ import VirtualCFOService from './pages/VirtualCFOService';
 import DataLabellingService from './pages/DataLabellingService';
 import DataAnalyticsService from './pages/DataAnalyticsService';
 import BookKeeping from './pages/Bookkeeping';
+import DataSecurity from './pages/DataSecurity';
 import ScrollToTop from './components/ScrollToTop';
 import { AnimatePresence } from 'framer-motion';
 import ReactGA from 'react-ga';
@@ -41,6 +42,7 @@ function App() {
           <Route key="cirt" exact path="/virtual-CFO-service" element={<VirtualCFOService/>}/>
           <Route key="datalabel" exact path="/datalabelling-service" element={<DataLabellingService/>}/>
           <Route key="dataanal" exact path="/dataanalytics-service" element={<DataAnalyticsService/>}/>
+          <Route key="datasecurity" exact path="/data-security" element={<DataSecurity/>}/>
           <Route key="bookkeep" exact path="/book-keeping" element={<BookKeeping/>}/>
         </Routes>
         <a
